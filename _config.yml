@@ -1,25 +1,27 @@
 # Site settings
-title: "Piotr Gryko Homepage"
+title: "Piotr Gryko"
 email: piotr.gryko@gmail.com
-description: "A personal blog for Piotr Gryko"
+description: "Little description"
 baseurl: ""
 url: "https://piotrgryko.co.uk"
-title_description: "A personal blog for Piotr Gryko"
+title_description: "Developer with an interest in cryptocurrencies. I've built projects using
+python, c++, ansible, vagrant."
 title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
 google_analytics: ""
-github_repository: https://github.com/jacobtomlinson/carte-noire
+github_repository: https://gitlab.com/pgryko/
+gitlab_repository: https://github.com/pgryko/
 addthis_id: ra-513c6fa832323
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: piotrgryko
-github_username:  piotrgryko
-gitlab_username: piotrgryko
+twitter_username: pgryko
+github_username:  pgryko
+gitlab_username: pgryko
 linkedin_link: https://www.linkedin.com/in/piotr-gryko-7bb43725/
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: "Got a suggestion or seen a typo?"
+footer_right: "Submit a pull request on <a href=\"https://gitlab.com/pgryko/piotr-gryko\">Gitlab</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown
