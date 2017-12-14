@@ -11,17 +11,17 @@ google_analytics: ""
 github_repository: https://gitlab.com/pgryko/
 gitlab_repository: https://github.com/pgryko/
 addthis_id: ra-513c6fa832323
+email: piotr.gryko@gmail.com
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: pgryko
 github_username:  pgryko
 gitlab_username: pgryko
 linkedin_link: https://www.linkedin.com/in/piotr-gryko-7bb43725/
 
 # Footer
 footer_left: "Got a suggestion or seen a typo?"
-footer_right: "Submit a pull request on <a href=\"https://gitlab.com/pgryko/piotr-gryko\">Gitlab</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_right: "Submit a pull request on <a href=\"https://gitlab.com/pgryko/piotr-gryko\">Gitlab</a> &nbsp;<i class=\"fa fa-gitlab\"></i>"
 
 # Build settings
 markdown: kramdown

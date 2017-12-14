@@ -1,1 +1,0 @@
-2017-12-13-setting-up-a-site-using-jekyll.md
