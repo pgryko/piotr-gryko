@@ -7,12 +7,12 @@ variables:
   JEKYLL_ENV: production
 
 before_script:
-- bundle install
+- gem install jekyll bundler
 
 test:
   stage: test
   script:
-  - bundle exec jekyll build -d test
+  - jekyll build -d test
   artifacts:
     paths:
     - test
@@ -22,7 +22,7 @@ test:
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll build -d public
+  - jekyll build -d public
   artifacts:
     paths:
     - public
