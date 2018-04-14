@@ -5,7 +5,7 @@ description: "Little description"
 baseurl: ""
 url: "https://piotrgryko.co.uk"
 title_description: "Dr Piotr Gryko, studied experimental physics at University College London. His PhD at Imperial College London focused on using biomaterials to self assemble inorganic materials, merging the boundaries of biological systems and machines.
-He now specializes in writing software, from numerical modeling, to logistics, e-commerce and cryptocurrencies. Favourite tecnologies are python, c++, ansible, vagrant."
+ </br>He now specializes in writing software, from numerical modeling, to logistics, e-commerce and cryptocurrencies. Favourite tecnologies are python, c++, ansible, vagrant."
 title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
 google_analytics: ""
 github_repository: https://gitlab.com/pgryko/
@@ -32,3 +32,6 @@ kramdown:
 
 permalink: pretty
 exclude: [vendor]
+
+# Jekyll serve settings
+host: 0.0.0.0

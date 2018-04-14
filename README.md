@@ -1,6 +1,10 @@
 
 Instructions:
 
+Install Jekyll
+
+$ sudo apt-get install ruby ruby-dev make build-essential
+
 
 $ jekyll serve
 
