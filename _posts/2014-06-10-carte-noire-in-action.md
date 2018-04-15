@@ -99,7 +99,7 @@ or add, features.
 
 Happy writing.
 
-[1]: http://pixyll.com/jekyll/pixyll/2014/06/10/see-pixyll-in-action/
+[1]: https://pixyll.com/jekyll/pixyll/2014/06/10/see-pixyll-in-action/
 [2]: https://noahfrederick.com/log/lion-terminal-theme-peppermint/
 [3]: https://github.com/jacobtomlinson/carte-noire
-[4]: http://pixyll.com/
+[4]: https://pixyll.com/

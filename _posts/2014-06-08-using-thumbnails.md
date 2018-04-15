@@ -22,7 +22,7 @@ location (I use [Imgur][3]) and then you need to add the url to `_data/thumbnail
 with an associated keyword.
 
 ```
-jekyll: "http://i.imgur.com/aRQcGSi.png"
+jekyll: "https://i.imgur.com/aRQcGSi.png"
 ```
 
 You then add a `thumbnail` option to the article's frontmatter and provide the keyword
@@ -52,8 +52,8 @@ Then in the future if you decide you want to use your own android icon you can j
 add it to `_data/thumbnails.yml` which will override it for all articles using
 the android thumbnail.
 
-[1]: http://jekyllrb.com/docs/frontmatter/
-[2]: http://fortawesome.github.io/Font-Awesome/
-[3]: http://imgur.com/
-[4]: http://fortawesome.github.io/Font-Awesome/icons/
-[5]: http://fortawesome.github.io/Font-Awesome/icon/android/
+[1]: https://jekyllrb.com/docs/frontmatter/
+[2]: https://fortawesome.github.io/Font-Awesome/
+[3]: https://imgur.com/
+[4]: https://fortawesome.github.io/Font-Awesome/icons/
+[5]: https://fortawesome.github.io/Font-Awesome/icon/android/

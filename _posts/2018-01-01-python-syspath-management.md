@@ -11,7 +11,11 @@ tags:
 ---
 
 All import syspaths
-> python3 -m site
+```console
+$ python3 -m site
+```
 
 User specific import paths
-> python3 -m site --usersite
+```console
+$ python3 -m site --usersite
+```

@@ -25,4 +25,4 @@ but with the hosting and maintenance simplicity of Jekyll.
 
 Please use/copy/share Carte Noire!
 
-[1]: http://www.jacobtomlinson.co.uk/
+[1]: https://www.jacobtomlinson.co.uk/

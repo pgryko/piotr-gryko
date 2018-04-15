@@ -23,17 +23,18 @@ Solution: Setup a reverse ssh tunnel using autossh and systemd
 We have a server with a dynamic ip address hidden behind a firewall.
 Normally if the server's ip address was static, we chould first ssh through
 the jumphost
-
->$ ssh user@jumphost.io
-
+```console
+$ ssh user@jumphost.io
+```
 And then into the server
-
->$ ssh user@serverA
-
+```console
+$ ssh user@serverA
+```
 Or in one line using proxy command
-
->$ ssh -o ProxyCommand='ssh user@jumphost.io' user@serverA
-
+```console
+$ ssh -o ProxyCommand='ssh user@jumphost.io' user@serverA
+```
+```
              +------------+            +-----------+
              |            |            |           |
              |   Jumphost |            |  Server A |
@@ -41,7 +42,7 @@ Or in one line using proxy command
   Your +---->++----->----+++----SSH+-->+           |
   Machine    |+----------+|            |           |
              +------------+            +-----------+
-
+```
 However if the ip address of serverA keeps changing, we won't know what to ssh into
 for second ssh jump.
 
@@ -52,7 +53,7 @@ There are two possible solutions:
 ## Reverse proxy through a jumphost
 This involves keeping an live ssh connection from Server A to the Jumphost, leaving an open port tunnel available for reverse ssh.
 
-
+```
              +------------+            +-----------+
              |            |+----SSH+-->|           |
              |   Jumphost |            |  Server A |
@@ -61,6 +62,7 @@ This involves keeping an live ssh connection from Server A to the Jumphost, leav
              |+----------+|            |           |
              +------------+            +-----------+
 
+```
 
 Any machine that's able to ssh into the jumphost, is able to ssh into the server.
 
@@ -70,14 +72,15 @@ This can be done manually by:
 
 1) Adding an ssh key so that ServerA can ssh into the Jumphost
 2) From Server A
-
+```console
 $ SSH -NR 10022:127.0.0.1:22 jumphost.io
-
+```
 This sets up a port forwaring from port 10022 on the jumphost to port 22 on ServerA.
 
 It is now possible to access ServerA from the jumphost via port 10022, i.e from jumphost
-
+```console
 $ ssh -p 10022 user@localhost
+```
 
 Will get you into Server A
 
@@ -86,9 +89,9 @@ Will get you into Server A
 The previous tunnel will continue to work untill the connection drops, at which point the tunnel will fail. We can use autossh to keep a connection alive.
 
 From ServerA run:
-
-> $ autossh -M 0 -o "ExitOnForwardFailure=yes" -o "ServerAliveInterval 30" -o "ServerAliveCountMax 3" -NR 10022:127.0.0.1:22 jumphost.io
-
+```console
+$ autossh -M 0 -o "ExitOnForwardFailure=yes" -o "ServerAliveInterval 30" -o "ServerAliveCountMax 3" -NR 10022:127.0.0.1:22 jumphost.io
+```
 The ssh tunnel will now reconnect, should the connection drop.
 
 ### Keeping the connection live
@@ -99,10 +102,12 @@ The auto ssh script can now be added as a systemd process on serverA - this mean
 
 2) Create the system file
 
->$ sudo nano /etc/systemd/system/sshproxy.service
-
+```console
+$ sudo nano /etc/systemd/system/sshproxy.service
+```
 3) Add the following to it
 
+```code
 [Unit]
 Description=AutoSSH reverse tunnel service for umphost.io 100022 -> 22
 After=network.target
@@ -113,9 +118,10 @@ ExecStart=/usr/bin/autossh -M 0 -o "ExitOnForwardFailure=yes" -o "ServerAliveInt
 
 [Install]
 WantedBy=multi-user.target
-
+```
 4) Enable the systemd services
-
->$ sudo systemctl daemon-reload
->$ systemctl start autossh-jump-rtunnel.service
->$ systemctl enable autossh-jump-rtunnel.service
+```console
+$ sudo systemctl daemon-reload
+$ systemctl start autossh-jump-rtunnel.service
+$ systemctl enable autossh-jump-rtunnel.service
+```
