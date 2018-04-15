@@ -1,17 +1,28 @@
 
-Instructions:
+# Intro
 
-Install Jekyll
+Personal blog for Dr Piotr Gryko
 
+## Build Instructions:
+
+
+```console
 $ sudo apt-get install ruby ruby-dev make build-essential
 
+$ gem install bundler jekyll
+
+$ bundle install
 
 $ jekyll serve
 
 $ jekyll build
+```
 
+## Hosting
+This source code is hosted on [gitlab](https://gitlab.com/pgryko/piotr-gryko) and automatically deployed onto the web using [Netlify](https://netlify.com)
 
-A simple Jekyll theme for blogging. Not named after the coffee.
+## Theme
+Theme is forked from [carte-noire](https://github.com/jacobtomlinson/carte-noire), 
 
 ![Homepage](http://i.imgur.com/xlmHArV.png)
 
@@ -28,17 +39,9 @@ A simple Jekyll theme for blogging. Not named after the coffee.
 ### Menu by mmenu
 ![Menu](http://i.imgur.com/SClrNSH.png)
 
-## Contact
-If you wish to contact me regarding this theme please raise an issue on GitHub,
-tweet me [@_jacobtomlinson](http://www.twitter.com/_jacobtomlinson) or email me
-[jacob@jacobtomlinson.co.uk](mailto:jacob@jacobtomlinson.co.uk).
 
 ## Contribution
 Pull requests are very welcome.
-
-## Theme
-This jekyll theme has been created from scratch. Ideas and inspiration are taken
-from other places but the code is my own.
 
 ## Tools and Libraries
 The following tools and libraries are used in this theme
