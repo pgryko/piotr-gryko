@@ -18,7 +18,7 @@ $ jekyll serve
 $ jekyll build
 ```
 
-## Generating integrity hashes for css and js files
+## Generating subsource integrity hashes for css and js files
 
 ```console
 $ cat highlightjs.piperita.scss | openssl dgst -sha384 -binary | openssl enc -base64 -A
