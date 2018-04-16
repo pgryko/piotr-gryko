@@ -6,7 +6,7 @@ baseurl: ""
 url: "https://www.piotrgryko.com"
 title_description: "Dr Piotr Gryko, studied experimental physics at University College London. His PhD at Imperial College London focused on using biomaterials to self assemble inorganic materials, merging the boundaries of biological systems and machines.
  </br>He now specializes in writing software, from numerical modeling, to logistics, e-commerce and cryptocurrencies. Favourite tecnologies are python, c++, ansible, vagrant."
-title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+title_image: "img/piotr_gryko.jpg"
 google_analytics: ""
 github_repository: https://gitlab.com/pgryko/
 gitlab_repository: https://github.com/pgryko/
