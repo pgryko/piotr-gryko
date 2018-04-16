@@ -11,10 +11,12 @@ $xing:           #006567;
 $google-plus:    #c95644;
 $facebook:       #365899;
 $github:         #f6c2a4;
+$gitlab:         #ff5733;
 $stack-overflow: #c98b3b;
 $instagram:      #cd486b;
 $reddit:         #cee3f8;
 $rss:            #eea33a;
+$envelope:    #006567;
 
 $darker:         #21211E;
 $dark:           #2D2D29;
@@ -184,6 +186,10 @@ ul {
 		color: $twitter;
 	}
 
+	.fa-gitlab:hover {
+		color: $gitlab;
+	}
+
 	.fa-linkedin:hover {
 		color: $linkedin;
 	}
@@ -194,6 +200,10 @@ ul {
 
 	.fa-google-plus:hover {
 		color: $google-plus;
+	}
+
+	.fa-envelope:hover {
+		color: $envelope;
 	}
 	
 	.fa-facebook:hover {
